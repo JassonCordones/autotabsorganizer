@@ -1,12 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Auto Tab Organizer",
-  "version": {
-    "version": "0.1.0",
-    "license": [
-      "MIT"
-    ]
-  },
+  "version": "0.1.0",
   "description": "Automatically group tabs using machine learning.",
   "permissions": [
     "tabs",
