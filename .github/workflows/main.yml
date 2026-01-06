@@ -1,0 +1,40 @@
+name: Publish Firefox Extension
+
+on:
+  push:
+    tags:
+      - "v*.*.*"
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build extension
+        run: npm run build
+
+      - name: Package extension
+        run: |
+          npx web-ext build \
+            --source-dir dist \
+            --artifacts-dir artifacts \
+            --overwrite-dest
+
+      - name: Publish to AMO
+        run: |
+          npx web-ext sign \
+            --source-dir dist \
+            --api-key ${{ secrets.AMO_API_KEY }} \
+            --api-secret ${{ secrets.AMO_API_SECRET }} \
+            --channel listed
