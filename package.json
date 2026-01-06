@@ -9,7 +9,7 @@
   "description": "1. Run npm run build. 2. Open Firefox and go to about:debugging#/runtime/this-firefox and Load Temporary Add-on -> select dist/manifest.json. 4. Click the extension popup and press \"Organize Tabs\".",
   "main": "index.js",
   "scripts": {
-    "build": "tsc && rsync -a --include='*/' --include='*.html' --include='*.css' --exclude='*' src/ dist/ && cp manifest.json dist/manifest.json",
+    "build": "tsc && rsync -a --include='*/' --include='*.html' --include='*.css' --include='*.svg' --exclude='*' src/ dist/ && cp manifest.json dist/manifest.json",
     "watch": "tsc -w",
     "clean": "rm -rf dist",
     "test": "echo \"Error: no test specified\" && exit 1"
