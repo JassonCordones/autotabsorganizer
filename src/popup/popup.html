@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Auto Tabs Organizer</title>
+    <link rel="stylesheet" href="popup.css" />
+</head>
+
+<body>
+    <div class="app">
+
+        <header class="app-header">
+            <h1>Auto Tabs</h1>
+            <p class="subtitle">Preview how your tabs will be grouped</p>
+            <button id="plan" class="primary">Organize Tabs</button>
+        </header>
+
+        <main>
+            <section id="status" class="status hidden"></section>
+            <section id="preview" class="preview hidden"></section>
+        </main>
+
+        <footer id="actions" class="actions hidden">
+            <button id="cancel" class="ghost">Cancel</button>
+            <button id="accept" class="primary">Apply</button>
+        </footer>
+
+    </div>
+
+    <script type="module" src="popup.js"></script>
+</body>
+
+</html>

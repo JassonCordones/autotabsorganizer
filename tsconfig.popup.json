@@ -1,0 +1,10 @@
+{
+    "extends": "tsconfig.json",
+    "compilerOptions": {
+        "module": "none",
+        "moduleDetection": "legacy"
+    },
+    "include": [
+        "src/popup/popup.ts"
+    ]
+}

@@ -1,0 +1,17 @@
+<!--?xml version="1.0" encoding="UTF-8"?-->
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect x="4" y="8" width="56" height="40" rx="8" fill="#E5E7EB"></rect>
+
+  <!-- Tab layers -->
+  <rect x="10" y="14" width="44" height="26" rx="5" fill="#FFFFFF"></rect>
+  <rect x="14" y="18" width="36" height="18" rx="4" fill="#CBD5E1"></rect>
+
+  <!-- Group bars -->
+  <rect x="18" y="22" width="8" height="10" rx="2" fill="#3B82F6"></rect>
+  <rect x="28" y="22" width="8" height="10" rx="2" fill="#22C55E"></rect>
+  <rect x="38" y="22" width="8" height="10" rx="2" fill="#F59E0B"></rect>
+
+  <!-- Automation dot -->
+  <circle cx="48" cy="44" r="6" fill="#6366F1"></circle>
+</svg>
